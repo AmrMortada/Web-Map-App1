@@ -134,7 +134,7 @@ const homeControl = L.Control.extend({
     const button = L.DomUtil.create("a", "", container);
     button.href = "#";
     button.innerHTML =
-      '<img src="/plugins/images/home.png" alt="Home" style="height:16px; margin-top: 7px;">';
+      '<img src="plugins/images/home.png" alt="Home" style="height:16px; margin-top: 7px;">';
     button.title = "Home";
     L.DomEvent.on(button, "click", (e) => {
       myMap.flyTo(homeLatLng, homeZoom);
@@ -438,4 +438,5 @@ myMap.on("bfl:layerisempty", (ev) => {
   mainDiv.prepend(featureDiv);
   setTimeout(() => featureDiv.remove(), 5000);
 });
+
 
