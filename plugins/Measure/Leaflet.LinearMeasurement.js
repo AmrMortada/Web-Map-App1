@@ -17,7 +17,7 @@
         map_container = map.getContainer(),
         me = this;
       link.innerHTML =
-        '<img src="/plugins/images/ruler.png" alt="Measure" style="height:18px;margin-top: 6px;">';
+        '<img src="plugins/images/ruler.png" alt="Measure" style="height:18px;margin-top: 6px;">';
       link.href = "#";
       link.title = "Measure";
       link.style.cssText = "text-align: center;font-size: 19px";
