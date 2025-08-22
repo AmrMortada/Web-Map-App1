@@ -92,12 +92,16 @@ let baseMap = {
 
 ///--------> Adding basemap to the app
 let layerControl = L.control.layers(baseMap).addTo(myMap);
-if (localStorage.getItem("baseMap").trim()) {
-  baseMap[localStorage.getItem("baseMap").trim()].addTo(myMap);
+if (!localStorage.getItem("baseMap")) {
+  localStorage.setItem("baseMap", "OpenStreetMap");
+}
+
+let storedBaseMap = localStorage.getItem("baseMap");
+if (storedBaseMap && storedBaseMap.trim()) {
+  baseMap[storedBaseMap.trim()].addTo(myMap);
 } else {
   baseMap.OpenStreetMap.addTo(myMap);
 }
-
 ///--------> locat storage for basemap
 let mapElemt = document.querySelector(
   ".leaflet-control-layers-list .leaflet-control-layers-base"
@@ -434,3 +438,4 @@ myMap.on("bfl:layerisempty", (ev) => {
   mainDiv.prepend(featureDiv);
   setTimeout(() => featureDiv.remove(), 5000);
 });
+
