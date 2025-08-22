@@ -7,12 +7,12 @@
       useExternalControls: !1,
       backImage: "fa fa-caret-left",
       backText:
-        '<img src="/plugins/images/back.png" alt="Back" style="height:16px;">',
+        '<img src="plugins/images/back.png" alt="Back" style="height:16px;">',
       backTooltip: "Go to Previous Extent",
       backImageBeforeText: !0,
       forwardImage: "fa fa-caret-right",
       forwardText:
-        '<img src="/plugins/images/forward.png" alt="Forward" style="height:16px;">',
+        '<img src="plugins/images/forward.png" alt="Forward" style="height:16px;">',
       forwardTooltip: "Go to Next Extent",
       forwardImageBeforeText: !1,
       orientation: "vertical",
