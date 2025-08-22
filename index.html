@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>MapApp</title>
+    <link rel="icon" type="image/x-icon" href="./plugins/images/earth.png">
+
+    <!--Main style file -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!--leaflet link and script file -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!--leaflet measure plugins -->
+    <link rel="stylesheet" href="./plugins/Measure/Leaflet.LinearMeasurement.css">
+    <script src="./plugins/Measure/Leaflet.LinearMeasurement.js"></script>
+
+    <!--leaflet mousePosion plugins -->
+    <link rel="stylesheet" href="./plugins/MousePosition/coord-projection.css">
+    <script src="./plugins/MousePosition/coord-projection.js"></script>
+
+    <!--leaflet Draw plugins -->
+    <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.css" />
+    <script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.js"></script>
+
+    <!--leaflet MiniMap plugins -->
+    <link rel="stylesheet" href="./plugins/Minimap/Control.MiniMap.min.css" />
+    <script src="./plugins/Minimap/Control.MiniMap.min.js"></script>
+
+    <!--leaflet MiniMap plugins -->
+    <link rel="stylesheet" href="./plugins/FullScreen/leaflet.fullscreen.css" />
+    <script src='./plugins/FullScreen/Leaflet.fullscreen.min.js'></script>
+    <script src='./plugins/FullScreen/Leaflet.fullscreen.js'></script>
+
+
+    <!--leaflet location plugins -->
+    <link rel="stylesheet" href="./plugins/Location/L.Control.Locate.min.css" />
+    <script src='./plugins//Location/L.Control.Locate.min.js'></script>
+
+    <!--leaflet History view plugins -->
+    <link rel="stylesheet" type="text/css" href='./plugins/History/leaflet-history.css'>
+    <script type="text/javascript" src='./plugins/History/leaflet-history.js'></script>
+
+    <!-- Leaflet BetterFileLayer -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-better-filelayer@1.0.1/dist/leaflet.betterfilelayer.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script type="application/javascript"
+        src="https://unpkg.com/leaflet-better-filelayer@1.0.1/dist/leaflet.betterfilelayer.js"
+        crossorigin="anonymous"></script>
+
+    <!-- Leaflet Search -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch@latest/dist/geosearch.css" />
+    <script src="https://unpkg.com/leaflet-geosearch@latest/dist/bundle.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="myMap"></div>
+
+
+
+    <!--Main script file -->
+    <script src="./main/main.js" type="module"></script>
+</body>
+<!-- <label for=""></label> -->
+
+</html>
