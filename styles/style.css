@@ -1,0 +1,123 @@
+body {
+  background-color: rgb(54, 54, 54);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#myMap {
+  height: 100vh;
+  width: 100%;
+}
+
+.leaflet-control-custom a {
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  line-height: 26px;
+  min-width: 30px;
+  height: 33px;
+  display: block;
+}
+
+/* ----------------------------------------------------- */
+/* Base font and layout */
+.leaflet-popup-content-wrapper {
+  font-size: 15px;
+  min-width: auto;
+  max-width: fit-content;
+  height: fit-content;
+}
+
+/* Optional: increase popup width */
+.leaflet-popup-content {
+  min-width: 290px;
+  max-width: 400px;
+  max-height: 10em;
+  overflow-y: auto;
+}
+
+/* Table styling */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Zebra striping */
+.info-table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.info-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Cell borders and spacing */
+.info-table th,
+.info-table td {
+  border: 1px solid #cfcfcf;
+  padding: 5px 5px;
+  width: 50%;
+  vertical-align: middle;
+}
+
+/* Input styling */
+.info-table input[type="text"] {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  line-height: 1.4em;
+  font-size: 0.8em;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------------- */
+/* Number of Feature popup style */
+.featNumb {
+  position: absolute;
+  font-size: 1.1em;
+  z-index: 1000000;
+  margin-left: 5em;
+  margin-top: 1.1em;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #acf4bc;
+}
+
+/* Unsupported Feature popup style */
+.locAccess,
+.sizeLimit,
+.unsupptFeat {
+  font-size: 1.1em;
+  position: absolute;
+  z-index: 1000000;
+  margin-left: 5em;
+  margin-top: 1.1em;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #f4accf;
+}
+
+.emptyCoord {
+  position: absolute;
+  width: 40%;
+  font-size: 1.1em;
+  z-index: 1000000;
+  margin-left: 5em;
+  margin-top: 1.1em;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #e1e1e1;
+}
+
