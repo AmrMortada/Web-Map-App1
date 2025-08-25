@@ -74,6 +74,17 @@ let Esri_WorldImagery = L.tileLayer(
   }
 );
 
+let CartoDB_Dark = L.tileLayer(
+  "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+  {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    subdomains: "abcd",
+    minZoom: myMinZoom,
+    maxZoom: myMaxZoom,
+  }
+);
+
 let Google_Maps = L.tileLayer(
   "http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
   {
@@ -438,6 +449,7 @@ myMap.on("bfl:layerisempty", (ev) => {
   mainDiv.prepend(featureDiv);
   setTimeout(() => featureDiv.remove(), 5000);
 });
+
 
 
 
