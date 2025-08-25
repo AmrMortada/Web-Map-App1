@@ -47,7 +47,7 @@ const search = new window.GeoSearch.GeoSearchControl({
 myMap.addControl(search);
 //----------------------------Load tile map--------------------------//
 let Stadia_Satellite = L.tileLayer(
-  "https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.png",
+  "https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg",
   {
     minZoom: myMinZoom,
     maxZoom: myMaxZoom,
@@ -57,7 +57,7 @@ let Stadia_Satellite = L.tileLayer(
   }
 );
 
-let OSM = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.jpg", {
+let OSM = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   minZoom: myMinZoom,
   maxZoom: myMaxZoom,
   attribution:
@@ -438,6 +438,7 @@ myMap.on("bfl:layerisempty", (ev) => {
   mainDiv.prepend(featureDiv);
   setTimeout(() => featureDiv.remove(), 5000);
 });
+
 
 
 
