@@ -47,7 +47,7 @@ const search = new window.GeoSearch.GeoSearchControl({
 myMap.addControl(search);
 //----------------------------Load tile map--------------------------//
 let Stadia_Satellite = L.tileLayer(
-  "https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.{ext}",
+  "https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.png",
   {
     minZoom: myMinZoom,
     maxZoom: myMaxZoom,
@@ -438,5 +438,6 @@ myMap.on("bfl:layerisempty", (ev) => {
   mainDiv.prepend(featureDiv);
   setTimeout(() => featureDiv.remove(), 5000);
 });
+
 
 
