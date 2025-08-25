@@ -57,7 +57,7 @@ let Stadia_Satellite = L.tileLayer(
   }
 );
 
-let OSM = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+let OSM = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.jpg", {
   minZoom: myMinZoom,
   maxZoom: myMaxZoom,
   attribution:
@@ -438,6 +438,7 @@ myMap.on("bfl:layerisempty", (ev) => {
   mainDiv.prepend(featureDiv);
   setTimeout(() => featureDiv.remove(), 5000);
 });
+
 
 
 
